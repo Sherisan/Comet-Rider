@@ -1,0 +1,74 @@
+<svg width="460" height="207" viewBox="0 0 460 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Moon &#194;&#183; cratered satellite">
+<ellipse id="Lunar halo" opacity="0.1" cx="230" cy="103.5" rx="113" ry="103.5" fill="url(#paint0_radial_3_3132)"/>
+<circle id="Lunar body" cx="230" cy="100" r="77" fill="url(#paint1_linear_3_3132)"/>
+<g id="Lunar crater" clip-path="url(#clip0_3_3132)">
+<circle id="Raised rim" opacity="0.34" cx="213" cy="89" r="6" fill="#B2C4DA"/>
+<ellipse id="Crater hollow" opacity="0.65" cx="213.4" cy="89.16" rx="5.4" ry="5.16" fill="#3C506C"/>
+<ellipse id="Crater floor" opacity="0.5" cx="213" cy="89" rx="3.3" ry="3" fill="#71859F"/>
+</g>
+<g id="Lunar crater_2" clip-path="url(#clip1_3_3132)">
+<circle id="Raised rim_2" opacity="0.34" cx="278" cy="84" r="8" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_2" opacity="0.65" cx="278.2" cy="83.88" rx="7.2" ry="6.88" fill="#3C506C"/>
+<ellipse id="Crater floor_2" opacity="0.5" cx="278" cy="84" rx="4.4" ry="4" fill="#71859F"/>
+</g>
+<g id="Lunar crater_3" clip-path="url(#clip2_3_3132)">
+<circle id="Raised rim_3" opacity="0.34" cx="223" cy="150" r="8" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_3" opacity="0.65" cx="223.2" cy="149.88" rx="7.2" ry="6.88" fill="#3C506C"/>
+<ellipse id="Crater floor_3" opacity="0.5" cx="223" cy="150" rx="4.4" ry="4" fill="#71859F"/>
+</g>
+<g id="Lunar crater_4" clip-path="url(#clip3_3_3132)">
+<circle id="Raised rim_4" opacity="0.34" cx="188" cy="123" r="11" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_4" opacity="0.65" cx="187.9" cy="122.46" rx="9.9" ry="9.46" fill="#3C506C"/>
+<ellipse id="Crater floor_4" opacity="0.5" cx="188" cy="123" rx="6.05" ry="5.5" fill="#71859F"/>
+</g>
+<g id="Lunar crater_5" clip-path="url(#clip4_3_3132)">
+<circle id="Raised rim_5" opacity="0.34" cx="265" cy="124" r="27" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_5" opacity="0.65" cx="263.3" cy="121.22" rx="24.3" ry="23.22" fill="#3C506C"/>
+<ellipse id="Crater floor_5" opacity="0.5" cx="265" cy="124" rx="14.85" ry="13.5" fill="#71859F"/>
+</g>
+<g id="Lunar crater_6" clip-path="url(#clip5_3_3132)">
+<circle id="Raised rim_6" opacity="0.34" cx="243" cy="52" r="10" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_6" opacity="0.65" cx="243" cy="51.6" rx="9" ry="8.6" fill="#3C506C"/>
+<ellipse id="Crater floor_6" opacity="0.5" cx="243" cy="52" rx="5.5" ry="5" fill="#71859F"/>
+</g>
+<g id="Lunar crater_7" clip-path="url(#clip6_3_3132)">
+<circle id="Raised rim_7" opacity="0.34" cx="200" cy="71" r="19" fill="#B2C4DA"/>
+<ellipse id="Crater hollow_7" opacity="0.65" cx="199.1" cy="69.34" rx="17.1" ry="16.34" fill="#3C506C"/>
+<ellipse id="Crater floor_7" opacity="0.5" cx="200" cy="71" rx="10.45" ry="9.5" fill="#71859F"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_3132" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(230 103.5) scale(113 103.5)">
+<stop stop-color="#9BB1CF"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_3_3132" x1="168.4" y1="38.4" x2="291.6" y2="146.2" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B6C6D8"/>
+<stop offset="0.42" stop-color="#8A9CB4"/>
+<stop offset="0.82" stop-color="#40536E"/>
+<stop offset="1" stop-color="#23334C"/>
+</linearGradient>
+<clipPath id="clip0_3_3132">
+<rect width="12" height="12" fill="white" transform="translate(207 83)"/>
+</clipPath>
+<clipPath id="clip1_3_3132">
+<rect width="16" height="16" fill="white" transform="translate(270 76)"/>
+</clipPath>
+<clipPath id="clip2_3_3132">
+<rect width="16" height="16" fill="white" transform="translate(215 142)"/>
+</clipPath>
+<clipPath id="clip3_3_3132">
+<rect width="22" height="22" fill="white" transform="translate(177 112)"/>
+</clipPath>
+<clipPath id="clip4_3_3132">
+<rect width="54" height="54" fill="white" transform="translate(238 97)"/>
+</clipPath>
+<clipPath id="clip5_3_3132">
+<rect width="20" height="20" fill="white" transform="translate(233 42)"/>
+</clipPath>
+<clipPath id="clip6_3_3132">
+<rect width="38" height="38" fill="white" transform="translate(181 52)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="230" height="244" viewBox="0 0 230 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mothership &#194;&#183; complete ship" clip-path="url(#clip0_3_2926)">
+<ellipse id="Drive radiance" opacity="0.16" cx="115" cy="199" rx="57" ry="43" fill="url(#paint0_radial_3_2926)"/>
+<g id="Mothership airframe">
+<g id="Engine flame &#194;&#183; sustained thrust" clip-path="url(#clip1_3_2926)">
+<path id="Exhaust envelope" opacity="0.3" d="M161 180H179L175.04 195.51L170 213L164.24 196.17L161 180Z" fill="#B69AFF"/>
+<path id="Flame core" d="M165.14 180H174.86L172.34 193.2L170 203.76L166.76 193.2L165.14 180Z" fill="#EDF3FC"/>
+<rect id="Engine collar" x="159" y="175" width="22" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_2" clip-path="url(#clip2_3_2926)">
+<path id="Exhaust envelope_2" opacity="0.3" d="M129 180H147L143.04 202.09L138 227L132.24 203.03L129 180Z" fill="#B69AFF"/>
+<path id="Flame core_2" d="M133.14 180H142.86L140.34 198.8L138 213.84L134.76 198.8L133.14 180Z" fill="#EDF3FC"/>
+<rect id="Engine collar_2" x="127" y="175" width="22" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_3" clip-path="url(#clip3_3_2926)">
+<path id="Exhaust envelope_3" opacity="0.3" d="M83 180H101L97.04 202.09L92 227L86.24 203.03L83 180Z" fill="#B69AFF"/>
+<path id="Flame core_3" d="M87.14 180H96.86L94.34 198.8L92 213.84L88.76 198.8L87.14 180Z" fill="#EDF3FC"/>
+<rect id="Engine collar_3" x="81" y="175" width="22" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_4" clip-path="url(#clip4_3_2926)">
+<path id="Exhaust envelope_4" opacity="0.3" d="M51 180H69L65.04 195.51L60 213L54.24 196.17L51 180Z" fill="#B69AFF"/>
+<path id="Flame core_4" d="M55.14 180H64.86L62.34 193.2L60 203.76L56.76 193.2L55.14 180Z" fill="#EDF3FC"/>
+<rect id="Engine collar_4" x="49" y="175" width="22" height="7" fill="#465D79"/>
+</g>
+<path id="Carrier wings" d="M68 42H162L198 72L217 128L196 172L164 185H66L34 172L13 128L32 72L68 42Z" fill="#B69AFF"/>
+<path id="Ring inset" d="M74 55H156L188 81L205 128L187 163L157 174H73L43 163L25 128L42 81L74 55Z" fill="#3C345A"/>
+<g id="Reactor chamber">
+<path d="M171 119C171 147.167 145.928 170 115 170C84.0721 170 59 147.167 59 119C59 90.8335 84.0721 68 115 68C145.928 68 171 90.8335 171 119Z" fill="#0A1322"/>
+<mask id="stroke0_3_2926" fill="white">
+<path d="M171 119C171 147.167 145.928 170 115 170C84.0721 170 59 147.167 59 119C59 90.8335 84.0721 68 115 68C145.928 68 171 90.8335 171 119Z"/>
+</mask>
+<path d="M171 119C171 147.167 145.928 170 115 170C84.0721 170 59 147.167 59 119C59 90.8335 84.0721 68 115 68C145.928 68 171 90.8335 171 119Z" stroke-width="4" stroke="#8A72B4" mask="url(#stroke0_3_2926)"/>
+</g>
+<path id="Command hull" d="M107 18H123L141 55L135 170L122 192H108L95 170L89 55L107 18Z" fill="#C0D2E5"/>
+<path id="Command facet" d="M115 18H123L141 55L135 170L122 192H115V18Z" fill="#8794B4"/>
+<g id="Bridge canopy">
+<path d="M109 46H121L127 68L122 81H108L103 68L109 46Z" fill="#0A1322"/>
+<mask id="stroke1_3_2926" fill="white">
+<path d="M109 46H121L127 68L122 81H108L103 68L109 46Z"/>
+</mask>
+<path d="M109 46H121L127 68L122 81H108L103 68L109 46Z" stroke-width="2" stroke="#B69AFF" mask="url(#stroke1_3_2926)"/>
+</g>
+<rect id="Hangar strip" x="175" y="98" width="15" height="42" fill="#B69AFF"/>
+<rect id="Hangar strip_2" x="40" y="98" width="15" height="42" fill="#B69AFF"/>
+<rect id="Reactor line" x="134" y="102" width="5" height="40" fill="#B69AFF"/>
+<rect id="Reactor line_2" x="88" y="102" width="5" height="40" fill="#B69AFF"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2926" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 199) scale(57 43)">
+<stop stop-color="#B69AFF"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_3_2926">
+<rect width="230" height="244" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2926">
+<rect width="18" height="33" fill="white" transform="translate(161 180)"/>
+</clipPath>
+<clipPath id="clip2_3_2926">
+<rect width="18" height="47" fill="white" transform="translate(129 180)"/>
+</clipPath>
+<clipPath id="clip3_3_2926">
+<rect width="18" height="47" fill="white" transform="translate(83 180)"/>
+</clipPath>
+<clipPath id="clip4_3_2926">
+<rect width="18" height="33" fill="white" transform="translate(51 180)"/>
+</clipPath>
+</defs>
+</svg>

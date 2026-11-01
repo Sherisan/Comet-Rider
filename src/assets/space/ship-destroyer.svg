@@ -1,0 +1,53 @@
+<svg width="230" height="244" viewBox="0 0 230 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Destroyer &#194;&#183; complete ship" clip-path="url(#clip0_3_2894)">
+<ellipse id="Drive radiance" opacity="0.16" cx="115" cy="199" rx="57" ry="43" fill="url(#paint0_radial_3_2894)"/>
+<g id="Destroyer airframe">
+<g id="Engine flame &#194;&#183; sustained thrust" clip-path="url(#clip1_3_2894)">
+<path id="Exhaust envelope" opacity="0.3" d="M51 171H71L66.6 189.8L61 211L54.6 190.6L51 171Z" fill="#F2778F"/>
+<path id="Flame core" d="M55.6 171H66.4L63.6 187L61 199.8L57.4 187L55.6 171Z" fill="#EDF3FC"/>
+<rect id="Engine collar" x="49" y="166" width="24" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_2" clip-path="url(#clip2_3_2894)">
+<path id="Exhaust envelope_2" opacity="0.3" d="M104 174H126L121.16 199.38L115 228L107.96 200.46L104 174Z" fill="#F2778F"/>
+<path id="Flame core_2" d="M109.06 174H120.94L117.86 195.6L115 212.88L111.04 195.6L109.06 174Z" fill="#EDF3FC"/>
+<rect id="Engine collar_2" x="102" y="169" width="26" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_3" clip-path="url(#clip3_3_2894)">
+<path id="Exhaust envelope_3" opacity="0.3" d="M159 171H179L174.6 189.8L169 211L162.6 190.6L159 171Z" fill="#F2778F"/>
+<path id="Flame core_3" d="M163.6 171H174.4L171.6 187L169 199.8L165.4 187L163.6 171Z" fill="#EDF3FC"/>
+<rect id="Engine collar_3" x="157" y="166" width="24" height="7" fill="#465D79"/>
+</g>
+<path id="Split wings" d="M60 38L89 98H141L170 38L188 67L208 160L186 180L154 166H76L44 180L22 160L42 67L60 38Z" fill="#F2778F"/>
+<path id="Wing facets" d="M59 64L87 127H143L171 64L197 156L176 171L148 158H82L54 171L33 156L59 64Z" fill="#63394F"/>
+<path id="Split prow" d="M78 41L99 22L106 86H124L131 22L152 41L144 155L129 182H101L86 155L78 41Z" fill="#C0D2E5"/>
+<path id="Central armor" d="M106 95H124L131 150L122 172H108L99 150L106 95Z" fill="#7F91AB"/>
+<g id="Bridge">
+<path d="M109 107H121L125 124L119 131H111L105 124L109 107Z" fill="#0A1322"/>
+<mask id="stroke0_3_2894" fill="white">
+<path d="M109 107H121L125 124L119 131H111L105 124L109 107Z"/>
+</mask>
+<path d="M109 107H121L125 124L119 131H111L105 124L109 107Z" stroke-width="2" stroke="#F2778F" mask="url(#stroke0_3_2894)"/>
+</g>
+<rect id="Rail cannon" x="181" y="65" width="5" height="72" fill="#C0D2E5"/>
+<rect id="Rail cannon_2" x="44" y="65" width="5" height="72" fill="#C0D2E5"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2894" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 199) scale(57 43)">
+<stop stop-color="#F2778F"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_3_2894">
+<rect width="230" height="244" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2894">
+<rect width="20" height="40" fill="white" transform="translate(51 171)"/>
+</clipPath>
+<clipPath id="clip2_3_2894">
+<rect width="22" height="54" fill="white" transform="translate(104 174)"/>
+</clipPath>
+<clipPath id="clip3_3_2894">
+<rect width="20" height="40" fill="white" transform="translate(159 171)"/>
+</clipPath>
+</defs>
+</svg>

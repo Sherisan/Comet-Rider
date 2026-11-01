@@ -1,0 +1,37 @@
+<svg width="460" height="207" viewBox="0 0 460 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ringed planet &#194;&#183; complete backdrop asset">
+<ellipse id="Planet atmosphere" opacity="0.14" cx="230" cy="103.5" rx="115" ry="103.5" fill="url(#paint0_radial_3_3115)"/>
+<mask id="stroke0_3_3115" fill="white">
+<path d="M400 109.5C400 130.763 323.888 148 230 148C136.112 148 60 130.763 60 109.5C60 88.237 136.112 71 230 71C323.888 71 400 88.237 400 109.5Z"/>
+</mask>
+<path id="Distant ring" d="M400 109.5C400 130.763 323.888 148 230 148C136.112 148 60 130.763 60 109.5C60 88.237 136.112 71 230 71C323.888 71 400 88.237 400 109.5Z" stroke-width="28" stroke="#88A5C4" mask="url(#stroke0_3_3115)"/>
+<mask id="stroke1_3_3115" fill="white">
+<path d="M400 109.5C400 130.763 323.888 148 230 148C136.112 148 60 130.763 60 109.5C60 88.237 136.112 71 230 71C323.888 71 400 88.237 400 109.5Z"/>
+</mask>
+<path id="Ring division" d="M400 109.5C400 130.763 323.888 148 230 148C136.112 148 60 130.763 60 109.5C60 88.237 136.112 71 230 71C323.888 71 400 88.237 400 109.5Z" stroke-width="6" stroke="#0A1322" mask="url(#stroke1_3_3115)"/>
+<circle id="Planet sphere" cx="230" cy="100" r="78" fill="url(#paint1_linear_3_3115)"/>
+<path id="Cloud band" opacity="0.22" d="M168 57C209.333 68.2281 250.667 68.2281 292 57V65.4211C250.667 80.8596 209.333 80.8596 168 65.4211V57Z" fill="#ADD1E2"/>
+<path id="Cloud band_2" opacity="0.35" d="M153 94C204.333 105.333 255.667 105.333 307 94V99.6667C255.667 114.778 204.333 114.778 153 99.6667V94Z" fill="#1C3453"/>
+<path id="Cloud band_3" opacity="0.2" d="M172 139C210.667 147.667 249.333 147.667 288 139L281 146C247 156.667 213 156.667 179 146L172 139Z" fill="#9CBFD3"/>
+<mask id="stroke2_3_3115" fill="white">
+<path d="M60 110C60 163.333 400 163.333 400 110Z"/>
+</mask>
+<path id="Near ring" d="M60 110C60 163.333 400 163.333 400 110" stroke-width="28" stroke="#A3BED5" mask="url(#stroke2_3_3115)"/>
+<mask id="stroke3_3_3115" fill="white">
+<path d="M60 110C60 163.333 400 163.333 400 110Z"/>
+</mask>
+<path id="Near ring division" d="M60 110C60 163.333 400 163.333 400 110" stroke-width="6" stroke="#506681" mask="url(#stroke3_3_3115)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_3115" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(230 103.5) scale(115 103.5)">
+<stop stop-color="#72AEFF"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_3_3115" x1="152" y1="22" x2="284.6" y2="170.2" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B9D6E4"/>
+<stop offset="0.35" stop-color="#749AB6"/>
+<stop offset="0.7" stop-color="#324A70"/>
+<stop offset="1" stop-color="#17283F"/>
+</linearGradient>
+</defs>
+</svg>

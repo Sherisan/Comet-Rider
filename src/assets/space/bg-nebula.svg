@@ -1,0 +1,36 @@
+<svg width="460" height="207" viewBox="0 0 460 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Nebula &#194;&#183; ion cloud">
+<ellipse id="Outer violet cloud" opacity="0.3" cx="203" cy="103" rx="170" ry="98" fill="url(#paint0_radial_3_3170)"/>
+<ellipse id="Outer cyan cloud" opacity="0.24" cx="291.5" cy="104.5" rx="128.5" ry="92.5" fill="url(#paint1_radial_3_3170)"/>
+<path id="Nebula outer lobe" opacity="0.2" d="M63.6939 132.21C88.4885 85.3611 138.078 118.255 163.905 72.403C190.766 28.5449 240.356 57.4514 258.951 37.5159C301.309 19.5739 310.607 76.3902 351.931 71.4063C404.62 65.4256 406.686 107.29 370.527 127.226C341.6 149.155 306.475 116.261 278.581 151.148C238.289 186.036 207.296 148.158 163.905 170.087C131.879 183.045 118.449 148.158 86.4223 155.135C67.8263 155.135 60.5946 145.168 63.6939 132.21Z" fill="#7157B8"/>
+<path id="Nebula cyan lobe" opacity="0.18" d="M106 141.56C139.716 92.283 188.183 137.617 219.791 91.2975C252.454 43.0065 288.277 70.6014 323.047 52.8618C358.87 39.0644 407.337 78.4856 387.318 100.167C365.192 122.834 330.422 103.124 298.813 135.646C259.829 171.125 213.47 132.69 179.754 151.415C146.038 170.14 113.375 162.256 106 141.56Z" fill="#4EAFBA"/>
+<path id="Nebula luminous ridge" opacity="0.35" d="M97 151C146 99.447 178 146.043 212 97.4642C234 66.7307 257 98.4556 282 75.6533C319 42.937 348 60.7823 369 72.6791C333 60.7823 317 73.6705 288 94.49C258 116.301 241 89.533 221 113.327C185 163.888 145 115.309 97 151Z" fill="#A7C7E8"/>
+<mask id="stroke0_3_3170" fill="white">
+<path d="M67 157C115 97.7901 131 143.954 171 91.7688C207 35.5695 226 83.7403 267 55.6407C301 36.5731 327 43.598 347 57.6478"/>
+</mask>
+<path id="Violet gas filament" opacity="0.5" d="M67 157C115 97.7901 131 143.954 171 91.7688C207 35.5695 226 83.7403 267 55.6407C301 36.5731 327 43.598 347 57.6478" stroke-width="4" stroke="#B192E2" mask="url(#stroke0_3_3170)"/>
+<mask id="stroke1_3_3170" fill="white">
+<path d="M111 161C157 116.223 176 155.912 206 111.135C230 76.5351 252 111.135 289 83.6587C321 63.3057 343 67.3763 360 76.5351"/>
+</mask>
+<path id="Ion filament" opacity="0.65" d="M111 161C157 116.223 176 155.912 206 111.135C230 76.5351 252 111.135 289 83.6587C321 63.3057 343 67.3763 360 76.5351" stroke-width="2" stroke="#82D9E4" mask="url(#stroke1_3_3170)"/>
+<circle id="Embedded star" cx="292" cy="150" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_2" cx="130" cy="49" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_3" cx="356" cy="49" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_4" cx="320" cy="114" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_5" cx="261.5" cy="73.5" r="1.5" fill="#EDF3FC"/>
+<circle id="Embedded star_6" cx="205" cy="123" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_7" cx="153" cy="92" r="1" fill="#EDF3FC"/>
+<circle id="Embedded star_8" cx="97.5" cy="135.5" r="1.5" fill="#EDF3FC"/>
+<path id="Star glint" d="M263 66L264 71L267 72L264 73L263 79L262 73L259 72L262 71L263 66Z" fill="#EDF3FC"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_3170" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(203 103) scale(170 98)">
+<stop stop-color="#8C68E3"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_3_3170" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(291.5 104.5) scale(128.5 92.5)">
+<stop stop-color="#3EA9BF"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

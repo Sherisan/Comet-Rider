@@ -1,0 +1,59 @@
+<svg width="208" height="160" viewBox="0 0 208 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Debris &#194;&#183; radial scatter">
+<g id="Hull fragment">
+<path d="M37 40L58 32L66 49L46 58L37 40Z" fill="#465D79"/>
+<mask id="stroke0_3_3336" fill="white">
+<path d="M37 40L58 32L66 49L46 58L37 40Z"/>
+</mask>
+<path d="M37 40L58 32L66 49L46 58L37 40Z" stroke-width="2" stroke="#C0D2E5" mask="url(#stroke0_3_3336)"/>
+</g>
+<g id="Hull fragment_2">
+<path d="M138 22L155 31L148 53L131 42L138 22Z" fill="#465D79"/>
+<mask id="stroke1_3_3336" fill="white">
+<path d="M138 22L155 31L148 53L131 42L138 22Z"/>
+</mask>
+<path d="M138 22L155 31L148 53L131 42L138 22Z" stroke-width="2" stroke="#C0D2E5" mask="url(#stroke1_3_3336)"/>
+</g>
+<g id="Hull fragment_3">
+<path d="M144 110L169 100L179 117L155 124L144 110Z" fill="#6E675E"/>
+<mask id="stroke2_3_3336" fill="white">
+<path d="M144 110L169 100L179 117L155 124L144 110Z"/>
+</mask>
+<path d="M144 110L169 100L179 117L155 124L144 110Z" stroke-width="2" stroke="#FFB45F" mask="url(#stroke2_3_3336)"/>
+</g>
+<g id="Hull fragment_4">
+<path d="M60 108L87 115L80 136L66 128L60 108Z" fill="#465D79"/>
+<mask id="stroke3_3_3336" fill="white">
+<path d="M60 108L87 115L80 136L66 128L60 108Z"/>
+</mask>
+<path d="M60 108L87 115L80 136L66 128L60 108Z" stroke-width="2" stroke="#C0D2E5" mask="url(#stroke3_3_3336)"/>
+</g>
+<g id="Hull fragment_5">
+<path d="M94 72L108 66L116 84L99 89L94 72Z" fill="#AF8057"/>
+<mask id="stroke4_3_3336" fill="white">
+<path d="M94 72L108 66L116 84L99 89L94 72Z"/>
+</mask>
+<path d="M94 72L108 66L116 84L99 89L94 72Z" stroke-width="2" stroke="#FFB45F" mask="url(#stroke4_3_3336)"/>
+</g>
+<path id="Fragment facet" d="M39 40L58 32L63 37L43 44L39 40Z" fill="#C0D2E5"/>
+<rect id="Debris chip" x="134" y="73" width="3" height="4.5" transform="rotate(30 134 73)" fill="#FFB45F"/>
+<rect id="Debris chip_2" x="91" y="99" width="3" height="4.5" transform="rotate(30 91 99)" fill="#C0D2E5"/>
+<rect id="Debris chip_3" x="46" y="77" width="3" height="4.5" transform="rotate(30 46 77)" fill="#FFB45F"/>
+<rect id="Debris chip_4" x="118" y="125" width="5" height="7.5" transform="rotate(30 118 125)" fill="#FFB45F"/>
+<rect id="Debris chip_5" x="174" y="67" width="4" height="6" transform="rotate(30 174 67)" fill="#FFB45F"/>
+<rect id="Debris chip_6" x="94" y="25" width="4" height="6" transform="rotate(30 94 25)" fill="#FFB45F"/>
+<rect id="Debris chip_7" x="31" y="100" width="5" height="7.5" transform="rotate(30 31 100)" fill="#C0D2E5"/>
+<mask id="stroke5_3_3336" fill="white">
+<path d="M21 20L36 33Z"/>
+</mask>
+<path id="Scatter trajectory" opacity="0.5" d="M21 20L36 33" stroke-width="2" stroke="#536781" mask="url(#stroke5_3_3336)"/>
+<mask id="stroke6_3_3336" fill="white">
+<path d="M170 128L189 141Z"/>
+</mask>
+<path id="Scatter trajectory_2" opacity="0.5" d="M170 128L189 141" stroke-width="2" stroke="#536781" mask="url(#stroke6_3_3336)"/>
+<mask id="stroke7_3_3336" fill="white">
+<path d="M156 19L168 4Z"/>
+</mask>
+<path id="Scatter trajectory_3" opacity="0.5" d="M156 19L168 4" stroke-width="2" stroke="#536781" mask="url(#stroke7_3_3336)"/>
+</g>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="230" height="244" viewBox="0 0 230 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Fighter &#194;&#183; complete ship" clip-path="url(#clip0_3_2837)">
+<ellipse id="Drive radiance" opacity="0.16" cx="115" cy="199" rx="57" ry="43" fill="url(#paint0_radial_3_2837)"/>
+<g id="Fighter airframe">
+<g id="Engine flame &#194;&#183; sustained thrust" clip-path="url(#clip1_3_2837)">
+<path id="Exhaust envelope" opacity="0.3" d="M77 166H94L90.26 188.56L85.5 214L80.06 189.52L77 166Z" fill="#FFB45F"/>
+<path id="Flame core" d="M80.91 166H90.09L87.71 185.2L85.5 200.56L82.44 185.2L80.91 166Z" fill="#EDF3FC"/>
+<rect id="Engine collar" x="75" y="161" width="21" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_2" clip-path="url(#clip2_3_2837)">
+<path id="Exhaust envelope_2" opacity="0.3" d="M136 166H153L149.26 188.56L144.5 214L139.06 189.52L136 166Z" fill="#FFB45F"/>
+<path id="Flame core_2" d="M139.91 166H149.09L146.71 185.2L144.5 200.56L141.44 185.2L139.91 166Z" fill="#EDF3FC"/>
+<rect id="Engine collar_2" x="134" y="161" width="21" height="7" fill="#465D79"/>
+</g>
+<path id="Swept wings" d="M33 75L62 87L94 118L115 99L136 118L168 87L197 75L179 171L141 153L115 144L89 153L51 171L33 75Z" fill="#FFB45F"/>
+<path id="Wing armor" d="M43 87L94 127L115 113L136 127L187 87L170 157L140 143L115 135L90 143L60 157L43 87Z" fill="#634D40"/>
+<path id="Arrow hull" d="M115 26L141 122L132 173H98L89 122L115 26Z" fill="#C0D2E5"/>
+<path id="Keel facet" d="M115 26L141 122L132 173H115V26Z" fill="#8A9CB0"/>
+<g id="Canopy">
+<path d="M115 71L125 99L121 119H109L105 99L115 71Z" fill="#0A1322"/>
+<mask id="stroke0_3_2837" fill="white">
+<path d="M115 71L125 99L121 119H109L105 99L115 71Z"/>
+</mask>
+<path d="M115 71L125 99L121 119H109L105 99L115 71Z" stroke-width="2" stroke="#FFB45F" mask="url(#stroke0_3_2837)"/>
+</g>
+<rect id="Wing cannon" x="179" y="70" width="5" height="61" fill="#C0D2E5"/>
+<rect id="Wing cannon_2" x="47" y="70" width="5" height="61" fill="#C0D2E5"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2837" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 199) scale(57 43)">
+<stop stop-color="#FFB45F"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_3_2837">
+<rect width="230" height="244" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2837">
+<rect width="17" height="48" fill="white" transform="translate(77 166)"/>
+</clipPath>
+<clipPath id="clip2_3_2837">
+<rect width="17" height="48" fill="white" transform="translate(136 166)"/>
+</clipPath>
+</defs>
+</svg>

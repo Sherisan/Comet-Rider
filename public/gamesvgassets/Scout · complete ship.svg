@@ -1,0 +1,36 @@
+<svg width="230" height="244" viewBox="0 0 230 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Scout &#194;&#183; complete ship" clip-path="url(#clip0_3_2814)">
+<ellipse id="Drive radiance" opacity="0.16" cx="115" cy="199" rx="57" ry="43" fill="url(#paint0_radial_3_2814)"/>
+<g id="Scout airframe">
+<g id="Engine flame &#194;&#183; sustained thrust" clip-path="url(#clip1_3_2814)">
+<path id="Exhaust envelope" opacity="0.3" d="M105 160H125L120.6 186.32L115 216L108.6 187.44L105 160Z" fill="#6DE9D5"/>
+<path id="Flame core" d="M109.6 160H120.4L117.6 182.4L115 200.32L111.4 182.4L109.6 160Z" fill="#EDF3FC"/>
+<rect id="Engine collar" x="103" y="155" width="24" height="7" fill="#465D79"/>
+</g>
+<path id="Delta wings" d="M115 80L177 174L129 158L115 142L101 158L53 174L115 80Z" fill="#6DE9D5"/>
+<path id="Wing insets" d="M99 110L66 161L105 146L115 135L125 146L164 161L131 110L115 125L99 110Z" fill="#465D79"/>
+<path id="Needle hull" d="M115 29L135 132L125 162H105L95 132L115 29Z" fill="#C0D2E5"/>
+<path id="Hull facet" d="M115 29L135 132L125 162H115V29Z" fill="#7E9BB8"/>
+<g id="Canopy">
+<path d="M115 73L123 105L119 119H111L107 105L115 73Z" fill="#0A1322"/>
+<mask id="stroke0_3_2814" fill="white">
+<path d="M115 73L123 105L119 119H111L107 105L115 73Z"/>
+</mask>
+<path d="M115 73L123 105L119 119H111L107 105L115 73Z" stroke-width="2" stroke="#6DE9D5" mask="url(#stroke0_3_2814)"/>
+</g>
+<rect id="Nose light" x="113" y="45" width="4" height="16" fill="#6DE9D5"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2814" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 199) scale(57 43)">
+<stop stop-color="#6DE9D5"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_3_2814">
+<rect width="230" height="244" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2814">
+<rect width="20" height="56" fill="white" transform="translate(105 160)"/>
+</clipPath>
+</defs>
+</svg>

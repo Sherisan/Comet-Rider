@@ -1,0 +1,37 @@
+<svg width="136" height="151" viewBox="0 0 136 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Micro &#194;&#183; fuel capsule">
+<circle id="Energy halo" opacity="0.25" cx="68" cy="73" r="68" fill="url(#paint0_radial_3_2969)"/>
+<path id="Capsule casing" d="M60 18.75H76C87.7361 18.75 97.25 28.2639 97.25 40V107C97.25 118.736 87.7361 128.25 76 128.25H60C48.2639 128.25 38.75 118.736 38.75 107V40C38.75 28.2639 48.2639 18.75 60 18.75Z" fill="#0A1322" stroke-width="1.5" stroke="#6DE9D5"/>
+<rect id="Energy core" x="45" y="26" width="46" height="95" rx="16" fill="url(#paint1_linear_3_2969)"/>
+<rect id="Core glint" x="51" y="42" width="3" height="63" rx="1.5" fill="#6DE9D5"/>
+<g id="Upper cap">
+<path d="M50 13H86L96 23V35H40V23L50 13Z" fill="#465D79"/>
+<mask id="stroke0_3_2969" fill="white">
+<path d="M50 13H86L96 23V35H40V23L50 13Z"/>
+</mask>
+<path d="M50 13H86L96 23V35H40V23L50 13Z" stroke-width="2" stroke="#7990AD" mask="url(#stroke0_3_2969)"/>
+</g>
+<g id="Lower cap">
+<path d="M40 112H96V124L86 134H50L40 124V112Z" fill="#465D79"/>
+<mask id="stroke1_3_2969" fill="white">
+<path d="M40 112H96V124L86 134H50L40 124V112Z"/>
+</mask>
+<path d="M40 112H96V124L86 134H50L40 124V112Z" stroke-width="2" stroke="#7990AD" mask="url(#stroke1_3_2969)"/>
+</g>
+<rect id="Cap indicator" x="58" y="20" width="20" height="4" fill="#6DE9D5"/>
+<rect id="Cap indicator_2" x="58" y="121" width="20" height="4" fill="#6DE9D5"/>
+<path id="Energy emblem" d="M70 56L60 73H67L65 85L77 67H70V56Z" fill="#EDF3FC"/>
+<rect id="Tier indicator" x="62" y="95" width="4" height="6" fill="#6DE9D5"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2969" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68 73) scale(68)">
+<stop stop-color="#6DE9D5"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_3_2969" x1="45" y1="73.5" x2="91" y2="73.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6DE9D5" stop-opacity="0.156863"/>
+<stop offset="0.5" stop-color="#6DE9D5" stop-opacity="0.752941"/>
+<stop offset="1" stop-color="#6DE9D5" stop-opacity="0.207843"/>
+</linearGradient>
+</defs>
+</svg>

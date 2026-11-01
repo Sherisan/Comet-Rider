@@ -1,0 +1,48 @@
+<svg width="154" height="151" viewBox="0 0 154 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Fractured asteroid &#194;&#183; elongated">
+<g id="Rock body" clip-path="url(#clip0_3_3085)">
+<g id="Rock silhouette">
+<path d="M19 48L49 27L77 22L103 47L133 57L143 86L116 110L82 105L59 124L24 105L11 79L19 48Z" fill="#52647F"/>
+<mask id="stroke0_3_3085" fill="white">
+<path d="M19 48L49 27L77 22L103 47L133 57L143 86L116 110L82 105L59 124L24 105L11 79L19 48Z"/>
+</mask>
+<path d="M19 48L49 27L77 22L103 47L133 57L143 86L116 110L82 105L59 124L24 105L11 79L19 48Z" stroke-width="3" stroke="#8194AD" mask="url(#stroke0_3_3085)"/>
+</g>
+<path id="Lit facet" opacity="0.35" d="M17 55L46.04 25L92.24 29L131 53L86.96 45L46.04 48L17 73V55Z" fill="#8292A9"/>
+<path id="Shadow facet" opacity="0.6" d="M19 85L71.8 105L138 85L118 117L69.16 123L27 110L19 85Z" fill="#2F3E56"/>
+<g id="Crater" clip-path="url(#clip1_3_3085)">
+<circle id="Crater rim" cx="95" cy="65" r="19" fill="#8B9AB0"/>
+<ellipse id="Crater bowl" cx="94.1" cy="63.625" rx="17.1" ry="16.625" fill="#36465F"/>
+<ellipse id="Crater floor" cx="94.05" cy="63.1" rx="9.5" ry="7.6" fill="#435570"/>
+</g>
+<g id="Crater_2" clip-path="url(#clip2_3_3085)">
+<circle id="Crater rim_2" cx="42" cy="90" r="11" fill="#8B9AB0"/>
+<ellipse id="Crater bowl_2" cx="41.9" cy="89.625" rx="9.9" ry="9.625" fill="#36465F"/>
+<ellipse id="Crater floor_2" cx="41.45" cy="88.9" rx="5.5" ry="4.4" fill="#435570"/>
+</g>
+<g id="Crater_3" clip-path="url(#clip3_3_3085)">
+<circle id="Crater rim_3" cx="116" cy="78" r="7" fill="#8B9AB0"/>
+<ellipse id="Crater bowl_3" cx="116.3" cy="78.125" rx="6.3" ry="6.125" fill="#36465F"/>
+<ellipse id="Crater floor_3" cx="115.65" cy="77.3" rx="3.5" ry="2.8" fill="#435570"/>
+</g>
+<mask id="stroke1_3_3085" fill="white">
+<path d="M55 29L67 51L58 69L72 88L62 103"/>
+</mask>
+<path id="Surface fracture" d="M55 29L67 51L58 69L72 88L62 103" stroke-width="4" stroke="#28394E" mask="url(#stroke1_3_3085)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_3_3085">
+<rect width="132" height="102" fill="white" transform="translate(11 22)"/>
+</clipPath>
+<clipPath id="clip1_3_3085">
+<rect width="38" height="38" fill="white" transform="translate(76 46)"/>
+</clipPath>
+<clipPath id="clip2_3_3085">
+<rect width="22" height="22" fill="white" transform="translate(31 79)"/>
+</clipPath>
+<clipPath id="clip3_3_3085">
+<rect width="14" height="14" fill="white" transform="translate(109 71)"/>
+</clipPath>
+</defs>
+</svg>

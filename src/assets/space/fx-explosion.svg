@@ -1,0 +1,23 @@
+<svg width="208" height="160" viewBox="0 0 208 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Explosion &#194;&#183; peak bloom">
+<circle id="Blast radiance" opacity="0.35" cx="104" cy="80" r="80" fill="url(#paint0_radial_3_3319)"/>
+<mask id="stroke0_3_3319" fill="white">
+<path d="M104.05 17C120.754 17.0133 136.77 23.66 148.574 35.4788C160.379 47.2975 167.007 63.3207 167 80.025C166.993 96.7293 160.353 112.747 148.539 124.557C136.725 136.366 120.704 143 104 143C87.2957 143 71.2752 136.366 59.4611 124.557C47.647 112.747 41.0066 96.7293 41 80.025C40.9934 63.3207 47.6211 47.2975 59.4258 35.4788C71.2305 23.66 87.2457 17.0133 103.95 17"/>
+</mask>
+<path id="Outer shock ring" opacity="0.7" d="M104.05 17C120.754 17.0133 136.77 23.66 148.574 35.4788C160.379 47.2975 167.007 63.3207 167 80.025C166.993 96.7293 160.353 112.747 148.539 124.557C136.725 136.366 120.704 143 104 143C87.2957 143 71.2752 136.366 59.4611 124.557C47.647 112.747 41.0066 96.7293 41 80.025C40.9934 63.3207 47.6211 47.2975 59.4258 35.4788C71.2305 23.66 87.2457 17.0133 103.95 17" stroke-width="2" stroke="#E5824D" mask="url(#stroke0_3_3319)"/>
+<path id="Blast corona" d="M104 22L113 52L137 34L132 63L161 70L135 86L153 112L124 108L116 138L100 111L73 132L76 102L47 93L74 76L55 51L86 55L104 22Z" fill="#EE8151"/>
+<path id="Blast envelope" d="M104 42L113 64L133 53L124 75L142 85L120 90L128 112L107 101L94 119L90 96L66 99L81 78L68 58L93 63L104 42Z" fill="#FFCF76"/>
+<path id="White hot core" d="M104 62L110 74L124 76L113 85L115 100L102 92L88 98L91 83L84 70L98 73L104 62Z" fill="#FFF0C0"/>
+<rect id="Blast spark" x="96" y="6" width="3.00001" height="3.00001" transform="rotate(45 96 6)" fill="#FFB45F"/>
+<rect id="Blast spark_2" x="32" y="127" width="3.00001" height="3.00001" transform="rotate(45 32 127)" fill="#FFB45F"/>
+<rect id="Blast spark_3" x="163" y="128" width="6.00001" height="6.00001" transform="rotate(45 163 128)" fill="#FFB45F"/>
+<rect id="Blast spark_4" x="170" y="47" width="4.00001" height="4.00001" transform="rotate(45 170 47)" fill="#FFB45F"/>
+<rect id="Blast spark_5" x="24" y="30" width="5.00001" height="5.00001" transform="rotate(45 24 30)" fill="#FFB45F"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_3319" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104 80) scale(80)">
+<stop stop-color="#FFB45F"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

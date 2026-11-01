@@ -1,0 +1,19 @@
+<svg width="208" height="160" viewBox="0 0 208 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Impact &#194;&#183; contact flash">
+<circle id="Contact radiance" opacity="0.25" cx="104" cy="84" r="65" fill="url(#paint0_radial_3_3359)"/>
+<path id="Shock ring" opacity="0.55" d="M145.25 81C145.25 103.782 126.782 122.25 104 122.25C81.2183 122.25 62.75 103.782 62.75 81C62.75 58.2183 81.2183 39.75 104 39.75C126.782 39.75 145.25 58.2183 145.25 81Z" stroke-width="1.5" stroke="#6DE9D5"/>
+<path id="Shock ring_2" opacity="0.8" d="M133 81C133 97.0163 120.016 110 104 110C87.9837 110 75 97.0163 75 81C75 64.9837 87.9837 52 104 52C120.016 52 133 64.9837 133 81Z" stroke-width="2" stroke="#6DE9D5"/>
+<path id="Impact flash" d="M104 48L110 74L137 81L110 87L104 114L98 87L71 81L98 75L104 48Z" fill="#EDF3FC"/>
+<path id="Contact ray" d="M102 36L103.5 12L105 36H102Z" fill="#6DE9D5"/>
+<path id="Contact ray_2" d="M150 71L180 73L150 75V71Z" fill="#6DE9D5"/>
+<path id="Contact ray_3" d="M26 86L56 84V88L26 86Z" fill="#6DE9D5"/>
+<path id="Contact ray_4" d="M135 117L153 135L138 117H135Z" fill="#6DE9D5"/>
+<path id="Contact ray_5" d="M55 27L70 46H66L55 27Z" fill="#6DE9D5"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_3359" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104 84) scale(65)">
+<stop stop-color="#6DE9D5"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

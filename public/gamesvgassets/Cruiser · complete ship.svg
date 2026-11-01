@@ -1,0 +1,46 @@
+<svg width="230" height="244" viewBox="0 0 230 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Cruiser &#194;&#183; complete ship" clip-path="url(#clip0_3_2865)">
+<ellipse id="Drive radiance" opacity="0.16" cx="115" cy="199" rx="57" ry="43" fill="url(#paint0_radial_3_2865)"/>
+<g id="Cruiser airframe">
+<g id="Engine flame &#194;&#183; sustained thrust" clip-path="url(#clip1_3_2865)">
+<path id="Exhaust envelope" opacity="0.3" d="M66 175H89L83.94 197.56L77.5 223L70.14 198.52L66 175Z" fill="#72AEFF"/>
+<path id="Flame core" d="M71.29 175H83.71L80.49 194.2L77.5 209.56L73.36 194.2L71.29 175Z" fill="#EDF3FC"/>
+<rect id="Engine collar" x="64" y="170" width="27" height="7" fill="#465D79"/>
+</g>
+<g id="Engine flame &#194;&#183; sustained thrust_2" clip-path="url(#clip2_3_2865)">
+<path id="Exhaust envelope_2" opacity="0.3" d="M141 175H164L158.94 197.56L152.5 223L145.14 198.52L141 175Z" fill="#72AEFF"/>
+<path id="Flame core_2" d="M146.29 175H158.71L155.49 194.2L152.5 209.56L148.36 194.2L146.29 175Z" fill="#EDF3FC"/>
+<rect id="Engine collar_2" x="139" y="170" width="27" height="7" fill="#465D79"/>
+</g>
+<path id="Broad wings" d="M54 77L87 99H143L176 77L201 139L177 168H53L29 139L54 77Z" fill="#72AEFF"/>
+<path id="Armor plates" d="M58 93L87 117H143L172 93L193 137L174 161H56L37 137L58 93Z" fill="#354D72"/>
+<path id="Heavy keel" d="M103 25H127L147 70L141 162L128 184H102L89 162L83 70L103 25Z" fill="#C0D2E5"/>
+<path id="Hull facet" d="M115 25H127L147 70L141 162L128 184H115V25Z" fill="#829BB8"/>
+<g id="Bridge canopy">
+<path d="M104 57H126L133 84L125 98H105L97 84L104 57Z" fill="#0A1322"/>
+<mask id="stroke0_3_2865" fill="white">
+<path d="M104 57H126L133 84L125 98H105L97 84L104 57Z"/>
+</mask>
+<path d="M104 57H126L133 84L125 98H105L97 84L104 57Z" stroke-width="2" stroke="#72AEFF" mask="url(#stroke0_3_2865)"/>
+</g>
+<rect id="Reactor spine" x="111" y="112" width="8" height="50" fill="#72AEFF"/>
+<rect id="Wing vent" x="170" y="118" width="7" height="30" fill="#72AEFF"/>
+<rect id="Wing vent_2" x="53" y="118" width="7" height="30" fill="#72AEFF"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3_2865" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 199) scale(57 43)">
+<stop stop-color="#72AEFF"/>
+<stop offset="1" stop-color="#080F1D" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_3_2865">
+<rect width="230" height="244" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_2865">
+<rect width="23" height="48" fill="white" transform="translate(66 175)"/>
+</clipPath>
+<clipPath id="clip2_3_2865">
+<rect width="23" height="48" fill="white" transform="translate(141 175)"/>
+</clipPath>
+</defs>
+</svg>
