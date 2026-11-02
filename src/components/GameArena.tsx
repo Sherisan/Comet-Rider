@@ -322,7 +322,7 @@ export function GameArena({
       onPointerUp={(e) => e.pointerType === 'touch' && disengage()}
       onPointerCancel={disengage}
     >
-      <Backdrop scale={s} />
+      <Backdrop scale={s} speed={starSpeed} />
       <Starfield speed={starSpeed} />
 
       {/* Scheduled objects — same deterministic set the server validates. */}

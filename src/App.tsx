@@ -11,6 +11,7 @@ import { LiveBets } from './components/LiveBets';
 import { Hud } from './components/Hud';
 import { GameMenu } from './components/GameMenu';
 import { Toasts } from './components/Toasts';
+import { SplashScreen } from './components/SplashScreen';
 
 export default function App() {
   const { state, actions } = useGameState();
@@ -85,6 +86,7 @@ export default function App() {
       <LiveBets state={state} />
       <Hud state={state} live={live} actions={actions} />
       <Toasts toasts={state.toasts} actions={actions} />
+      <SplashScreen state={state} />
     </div>
   );
 }

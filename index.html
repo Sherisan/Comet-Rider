@@ -8,8 +8,43 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>" />
     <title>Comet Rider</title>
+    <style>
+      /* Boot splash — visible while the JS bundle downloads; SplashScreen.tsx removes it. */
+      html, body { margin: 0; height: 100%; background: #03030c; }
+      #boot-splash {
+        position: fixed; inset: 0; z-index: 100;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+        background:
+          radial-gradient(ellipse 50% 40% at 25% 30%, rgba(123, 47, 247, 0.3), transparent 70%),
+          radial-gradient(ellipse 45% 40% at 80% 75%, rgba(0, 170, 255, 0.2), transparent 70%),
+          #03030c;
+        font-family: system-ui, sans-serif; text-align: center;
+      }
+      #boot-splash .t {
+        display: flex; flex-direction: column; line-height: 0.95;
+        font-weight: 900; letter-spacing: 0.08em; font-size: clamp(36px, 9vw, 72px); color: #fff;
+        text-shadow: 0 0 24px rgba(45, 226, 255, 0.5);
+      }
+      #boot-splash .t b { color: #2de2ff; }
+      #boot-splash .bar {
+        width: min(280px, 70vw); height: 8px; border-radius: 999px; overflow: hidden;
+        background: rgba(10, 10, 34, 0.78); border: 1px solid #2c3a78;
+      }
+      #boot-splash .bar i {
+        display: block; height: 100%; border-radius: inherit;
+        background: linear-gradient(90deg, #7b2ff7, #2de2ff);
+        animation: bootfill 6s ease-out forwards;
+      }
+      @keyframes bootfill { from { width: 2%; } to { width: 14%; } }
+      #boot-splash p { margin: 0; color: #b7c3ee; font-size: 14px; letter-spacing: 0.04em; }
+    </style>
   </head>
   <body>
+    <div id="boot-splash" role="status">
+      <div class="t"><span>COMET</span><b>RIDER</b></div>
+      <div class="bar"><i></i></div>
+      <p>Loading…</p>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

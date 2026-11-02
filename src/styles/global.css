@@ -54,16 +54,16 @@ input[type='number'] { -moz-appearance: textfield; appearance: textfield; }
 .space.steerable { cursor: crosshair; }
 
 .backdrop { position: absolute; inset: 0; pointer-events: none; }
-.backdrop img { position: absolute; user-select: none; }
+.backdrop img { position: absolute; top: 0; user-select: none; will-change: transform; }
 .nebula-glow {
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse 45% 35% at 20% 30%, rgba(123, 47, 247, 0.28), transparent 70%),
     radial-gradient(ellipse 40% 40% at 85% 75%, rgba(0, 170, 255, 0.18), transparent 70%);
 }
-.bg-nebula { left: -6%; top: 14%; opacity: 0.55; }
-.bg-planet { right: -8%; bottom: 6%; opacity: 0.7; }
-.bg-moon { left: 4%; top: 44%; opacity: 0.8; }
+.bg-nebula { left: -6%; opacity: 0.55; }
+.bg-planet { right: -8%; opacity: 0.7; }
+.bg-moon { left: 4%; opacity: 0.8; }
 
 .starfield { position: absolute; inset: 0; pointer-events: none; }
 .starfield-layer { position: absolute; inset: 0; background-repeat: repeat; will-change: background-position, opacity; }
@@ -458,6 +458,8 @@ input[type='number'] { -moz-appearance: textfield; appearance: textfield; }
 }
 .bet-slot-hidden { display: none; }
 .bet-slot-visible { display: contents; }
+/* Folded HUD: slots stay mounted (auto-play state lives in them), just hidden. */
+.hud-bar.collapsed .bet-tabs, .hud-bar.collapsed .bet-slots-grid { display: none; }
 @media (min-width: 820px) {
   .bet-slots-grid { grid-template-columns: 1fr 1fr; }
   .bet-tabs { display: none; }
@@ -754,3 +756,56 @@ input[type='number'] { -moz-appearance: textfield; appearance: textfield; }
 @keyframes fxbloom { from { transform: translate(-50%, -50%) scale(0.2) rotate(0deg); opacity: 1; } 55% { opacity: 1; } to { transform: translate(-50%, -50%) scale(1.5) rotate(25deg); opacity: 0; } }
 @keyframes fxdebris { from { transform: translate(-50%, -50%) scale(0.4); opacity: 1; } to { transform: translate(-50%, -50%) scale(2.2) rotate(-20deg); opacity: 0; } }
 @keyframes doomed { to { opacity: 0; } }
+
+/* ── Splash / loading screen ─────────────────────────────────────
+      #boot-splash in index.html shows while the bundle downloads;
+      SplashScreen.tsx replaces it with the same look plus progress. */
+.splash {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 50% 40% at 25% 30%, rgba(123, 47, 247, 0.3), transparent 70%),
+    radial-gradient(ellipse 45% 40% at 80% 75%, rgba(0, 170, 255, 0.2), transparent 70%),
+    var(--bg);
+  transition: opacity 600ms ease, visibility 600ms;
+}
+.splash.splash-out { opacity: 0; visibility: hidden; pointer-events: none; }
+.splash-center {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  gap: 18px; padding: 24px; text-align: center;
+}
+.splash-ship { animation: splashhover 2.4s ease-in-out infinite; }
+.splash-title {
+  display: flex; flex-direction: column; align-items: center; line-height: 0.95;
+  font-family: var(--font-ui); font-weight: 900; letter-spacing: 0.08em;
+  font-size: clamp(36px, 9vw, 72px); color: #fff;
+  text-shadow: 0 0 24px rgba(45, 226, 255, 0.5);
+}
+.splash-title-accent { color: var(--cyan); }
+.splash-bar {
+  width: min(280px, 70vw); height: 8px; border-radius: 999px; overflow: hidden;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+}
+.splash-bar-fill {
+  height: 100%; border-radius: inherit;
+  background: linear-gradient(90deg, #7b2ff7, var(--cyan));
+  box-shadow: 0 0 12px rgba(45, 226, 255, 0.6);
+  transition: width 400ms ease;
+}
+.splash-status { color: var(--text-soft); font-size: 14px; letter-spacing: 0.04em; min-height: 1.2em; }
+.splash-stars span {
+  position: absolute; border-radius: 50%; background: #fff;
+  animation: splashtwinkle 3s ease-in-out infinite;
+}
+@keyframes splashhover {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes splashtwinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .splash-ship, .splash-stars span { animation: none; }
+}

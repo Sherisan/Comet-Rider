@@ -3,15 +3,19 @@ import driftUrl from '../../assets/space/stars-drift.svg';
 import cruiseUrl from '../../assets/space/stars-cruise.svg';
 import warpUrl from '../../assets/space/stars-warp.svg';
 
-/** Tile layers: drift is always on; cruise and warp fade in as speed builds. */
+/**
+ * Tile layers: drift is always on; cruise and warp fade in as speed builds.
+ * The streak layers are drawn at a larger tile `scale` (fewer streaks per
+ * screen) and capped at `maxOpacity` so they read as speed, not rain.
+ * Tile art is 224×160.
+ */
 const LAYERS = [
-  { url: driftUrl, rate: 0.35, fadeFrom: -1, fadeTo: 0 },
-  { url: cruiseUrl, rate: 1, fadeFrom: 120, fadeTo: 360 },
-  { url: warpUrl, rate: 1.8, fadeFrom: 520, fadeTo: 900 },
+  { url: driftUrl, scale: 2, rate: 0.35, fadeFrom: -1, fadeTo: 0, maxOpacity: 1 },
+  { url: cruiseUrl, scale: 3.5, rate: 1, fadeFrom: 220, fadeTo: 700, maxOpacity: 0.4 },
+  { url: warpUrl, scale: 4.5, rate: 1.8, fadeFrom: 1100, fadeTo: 1600, maxOpacity: 0.3 },
 ];
-/** Tile size (art is 224×160) — drawn at 2× so the stars aren't tiny on big screens. */
-const TILE_W = 448;
-const TILE_H = 320;
+const ART_W = 224;
+const ART_H = 160;
 
 /**
  * Vertical scrolling starfield built from the drift / cruise / warp tiles.
@@ -36,10 +40,10 @@ export function Starfield({ speed }: { speed: () => number }) {
       LAYERS.forEach((layer, i) => {
         const el = layerRefs.current[i];
         if (!el) return;
-        offsets[i] = (offsets[i] + current * layer.rate * dt) % TILE_H;
+        offsets[i] = (offsets[i] + current * layer.rate * dt) % (ART_H * layer.scale);
         el.style.backgroundPosition = `0 ${offsets[i].toFixed(1)}px`;
         const fade = layer.fadeFrom < 0 ? 1 : (current - layer.fadeFrom) / (layer.fadeTo - layer.fadeFrom);
-        el.style.opacity = String(Math.max(0, Math.min(1, fade)));
+        el.style.opacity = String(Math.max(0, Math.min(1, fade)) * layer.maxOpacity);
       });
       raf = requestAnimationFrame(tick);
     };
@@ -54,7 +58,10 @@ export function Starfield({ speed }: { speed: () => number }) {
           key={layer.url}
           ref={(el) => (layerRefs.current[i] = el)}
           className="starfield-layer"
-          style={{ backgroundImage: `url("${layer.url}")`, backgroundSize: `${TILE_W}px ${TILE_H}px` }}
+          style={{
+            backgroundImage: `url("${layer.url}")`,
+            backgroundSize: `${ART_W * layer.scale}px ${ART_H * layer.scale}px`,
+          }}
         />
       ))}
     </div>

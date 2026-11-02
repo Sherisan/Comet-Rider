@@ -82,30 +82,29 @@ export function Hud({
           />
         </div>
 
-        {expanded && (
-          <>
-            <div className="bet-tabs">
-              {[0, 1].map((i) => (
-                <button
-                  key={i}
-                  className={`bet-tab ${activeTab === i ? 'active' : ''}`}
-                  onClick={() => setActiveTab(i)}
-                >
-                  BET {i + 1}
-                  {state.myBets[i] && <span className="bet-tab-dot" aria-hidden />}
-                </button>
-              ))}
-            </div>
-            <div className="bet-slots-grid">
-              <div className={activeTab === 0 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
-                <BetSlot slot={0} state={state} live={live} actions={actions} />
-              </div>
-              <div className={activeTab === 1 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
-                <BetSlot slot={1} state={state} live={live} actions={actions} />
-              </div>
-            </div>
-          </>
-        )}
+        {/* Always mounted — just hidden while folded (see .hud-bar.collapsed) — so
+            each slot's auto-play, auto-cashout and queued bet survive the fold
+            that happens at every round start. */}
+        <div className="bet-tabs">
+          {[0, 1].map((i) => (
+            <button
+              key={i}
+              className={`bet-tab ${activeTab === i ? 'active' : ''}`}
+              onClick={() => setActiveTab(i)}
+            >
+              BET {i + 1}
+              {state.myBets[i] && <span className="bet-tab-dot" aria-hidden />}
+            </button>
+          ))}
+        </div>
+        <div className="bet-slots-grid">
+          <div className={activeTab === 0 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
+            <BetSlot slot={0} state={state} live={live} actions={actions} />
+          </div>
+          <div className={activeTab === 1 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
+            <BetSlot slot={1} state={state} live={live} actions={actions} />
+          </div>
+        </div>
       </div>
     </div>
   );
