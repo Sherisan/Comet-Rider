@@ -90,6 +90,8 @@ export interface BetPlacedDto {
   amount: number;
   balance: number;
   success: boolean;
+  /** Placed with a promo free bet. */
+  freeBet?: boolean;
 }
 
 export interface CashOutResultDto {

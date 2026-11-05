@@ -66,3 +66,19 @@ export function progressToNext(multiplier: number): { progress: number; next: Sh
 export function playerScale(multiplier: number): number {
   return Math.min(1.7, 0.6 + 0.28 * Math.log(Math.max(1, multiplier)) / Math.log(2.4));
 }
+
+/**
+ * Overwrites the multipliers above with the ones set in the Game Back Office, matched by class id.
+ * Unknown ids are ignored; anything not sent keeps its built-in value.
+ */
+export function applyEvolutionMultipliers(tiers: { code: string; multiplier: number }[]): void {
+  for (const t of tiers) {
+    const tier = SHIP_TIERS.find((s) => s.id === t.code);
+    if (tier && t.multiplier > 0) tier.multiplier = t.multiplier;
+  }
+}
+
+/** Legend form of a class threshold: "2x", "2.5x". */
+export function formatTierMultiplier(multiplier: number): string {
+  return `${Number(multiplier.toFixed(2))}x`;
+}

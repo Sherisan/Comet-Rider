@@ -19,6 +19,11 @@ export default defineConfig({
         changeOrigin: true,
         ws: true,
       },
+      '/promohub': {
+        target: 'http://localhost:5003',
+        changeOrigin: true,
+        ws: true,
+      },
     },
   },
 });

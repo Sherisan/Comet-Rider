@@ -3,6 +3,7 @@ import { formatMoney, formatMultiplier } from '../game/money';
 import type { GameActions, GameState } from '../game/useGameState';
 import type { LiveClock } from '../game/useLiveClock';
 import { BetSlot } from './BetSlot';
+import type { FreeBet } from '../promo/promoApi';
 
 /**
  * Bottom HUD — collapsible balance handle + two independent bet slots.
@@ -19,10 +20,12 @@ export function Hud({
   state,
   live,
   actions,
+  freeBets = [],
 }: {
   state: GameState;
   live: LiveClock;
   actions: GameActions;
+  freeBets?: FreeBet[];
 }) {
   const [expanded, setExpanded] = useState(true);
   const [activeTab, setActiveTab] = useState(0);
@@ -68,7 +71,7 @@ export function Hud({
                     <span className="main-btn-sub">
                       CASH OUT{liveBets.length > 1 ? ` BET ${i + 1}` : ''} {formatMultiplier(effective)}
                     </span>
-                    <span>{formatMoney(bet.amount * effective, currency)}</span>
+                    <span>{formatMoney(bet.amount * effective - (bet.free ? bet.amount : 0), currency)}</span>
                   </button>
                 );
               })}
@@ -99,10 +102,10 @@ export function Hud({
         </div>
         <div className="bet-slots-grid">
           <div className={activeTab === 0 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
-            <BetSlot slot={0} state={state} live={live} actions={actions} />
+            <BetSlot slot={0} state={state} live={live} actions={actions} freeBet={freeBets[0]} />
           </div>
           <div className={activeTab === 1 ? 'bet-slot-visible' : 'bet-slot-hidden'}>
-            <BetSlot slot={1} state={state} live={live} actions={actions} />
+            <BetSlot slot={1} state={state} live={live} actions={actions} freeBet={freeBets[0]} />
           </div>
         </div>
       </div>

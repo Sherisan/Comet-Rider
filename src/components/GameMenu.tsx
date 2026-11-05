@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { FUEL_CELLS, SHIP_TIERS } from '../game/tiers';
+import { FUEL_CELLS, SHIP_TIERS, formatTierMultiplier } from '../game/tiers';
 import { TIER_BOOSTS } from '../game/spawnSchedule';
 import { formatMoney, formatMultiplier } from '../game/money';
 import type { GameActions, GameState } from '../game/useGameState';
@@ -24,7 +24,7 @@ function HowToPlayView() {
         <li>The multiplier climbs as your ship accelerates. Tap <strong>Cash Out</strong> before it's destroyed to win your bet × the multiplier.</li>
         <li>Want more? Move the mouse (or drag a finger) to fly the ship. Grab glowing fuel cells for a multiplier boost — your class can only carry cells smaller than itself, so bigger cells unlock as you upgrade.</li>
         <li>Dodge the asteroids — flying into one destroys the ship and every active bet instantly. If you don't steer, you can't hit one.</li>
-        <li>Your ship upgrades from Scout to Mothership as the multiplier passes 2x, 5x, 10x and 25x.</li>
+        <li>Your ship upgrades from Scout to Mothership as the multiplier passes {SHIP_TIERS.slice(2, -1).map((t) => formatTierMultiplier(t.multiplier)).join(', ')} and {formatTierMultiplier(SHIP_TIERS[SHIP_TIERS.length - 1].multiplier)}.</li>
         <li>Set <strong>Auto</strong> → <strong>Cash out at</strong> to lock in automatically, or <strong>Auto-play</strong> to keep betting for several rounds.</li>
       </ol>
     </div>
@@ -197,7 +197,7 @@ export function GameMenu({ state, actions }: { state: GameState; actions: GameAc
               <span className="legend-tier">{tier.multiplier === 1 ? 'starting ship' : 'upgrades at'}</span>
             </div>
             <span className="legend-mult" style={{ color: tier.accent }}>
-              {tier.multiplier.toFixed(0)}x
+              {formatTierMultiplier(tier.multiplier)}
             </span>
           </div>
         ))}

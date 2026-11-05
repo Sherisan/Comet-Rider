@@ -32,6 +32,8 @@ export interface MyBet {
   boost: number;
   /** True after hitting a bomb — the bet is dead and cannot cash out. */
   dead: boolean;
+  /** A promo free bet: a win pays only what's above the stake. */
+  free?: boolean;
 }
 
 export interface Toast {
@@ -110,7 +112,8 @@ type Action =
   | { type: 'myBets'; entries: PlayerBetHistoryEntryDto[] }
   | { type: 'limits'; dto: LimitsDto }
   | { type: 'toast'; kind: Toast['kind']; text: string }
-  | { type: 'dismissToast'; id: number };
+  | { type: 'dismissToast'; id: number }
+  | { type: 'balance'; value: number };
 
 let toastId = 0;
 
@@ -257,7 +260,13 @@ function reducer(state: GameState, action: Action): GameState {
     }
 
     case 'betPlaced':
-      return { ...state, balance: action.dto.balance };
+      return {
+        ...state,
+        balance: action.dto.balance,
+        myBets: action.dto.freeBet
+          ? updateMyBet(state.myBets, action.dto.slot, (bet) => ({ ...bet, free: true }))
+          : state.myBets,
+      };
 
     case 'betCashedOut': {
       const bets = state.bets.map((b) =>
@@ -319,6 +328,9 @@ function reducer(state: GameState, action: Action): GameState {
     case 'dismissToast':
       return { ...state, toasts: state.toasts.filter((t) => t.id !== action.id) };
 
+    case 'balance':
+      return { ...state, balance: action.value };
+
     default:
       return state;
   }
@@ -326,11 +338,16 @@ function reducer(state: GameState, action: Action): GameState {
 
 export interface GameActions {
   placeBet: (amount: number, slot: number, autoCashOut: number | null) => void;
+  /** Bets one of the player's promo free bets (the server picks it; its value is the stake). */
+  placeFreeBet: (slot: number, autoCashOut: number | null) => void;
   cashOut: (slot: number) => void;
   eatFish: (slot: number, fishId: number) => void;
   bombHit: (slot: number, bombId: number) => void;
   refreshMyBets: () => void;
   dismissToast: (id: number) => void;
+  /** For promo awards: a toast, and the balance after a promo payout. */
+  notify: (kind: Toast['kind'], text: string) => void;
+  setBalance: (value: number) => void;
 }
 
 export function useGameState(): { state: GameState; actions: GameActions } {
@@ -423,11 +440,14 @@ export function useGameState(): { state: GameState; actions: GameActions } {
       (amount, slot, autoCashOut) => invoke('PlaceBet', amount, slot, autoCashOut),
       [invoke],
     ),
+    placeFreeBet: useCallback((slot, autoCashOut) => invoke('PlaceFreeBet', slot, autoCashOut), [invoke]),
     cashOut: useCallback((slot) => invoke('CashOut', slot), [invoke]),
     eatFish: useCallback((slot, fishId) => invoke('EatFish', slot, fishId), [invoke]),
     bombHit: useCallback((slot, bombId) => invoke('BombHit', slot, bombId), [invoke]),
     refreshMyBets: useCallback(() => invoke('GetMyBets'), [invoke]),
     dismissToast: useCallback((id) => dispatch({ type: 'dismissToast', id }), []),
+    notify: useCallback((kind, text) => dispatch({ type: 'toast', kind, text }), []),
+    setBalance: useCallback((value) => dispatch({ type: 'balance', value }), []),
   };
 
   return { state, actions };

@@ -12,10 +12,26 @@ import { Hud } from './components/Hud';
 import { GameMenu } from './components/GameMenu';
 import { Toasts } from './components/Toasts';
 import { SplashScreen } from './components/SplashScreen';
+import { usePromos } from './promo/usePromos';
+import { PromoBanner, PromoButton, PromoPanel } from './promo/PromoCenter';
+import { formatMoney } from './game/money';
 
 export default function App() {
   const { state, actions } = useGameState();
   const live = useLiveClock(state);
+  const currency = state.me?.currency ?? 'ZAR';
+  const [promoOpen, setPromoOpen] = useState(false);
+  const { promos, announcement, dismissAnnouncement } = usePromos({
+    onAward: (a) => {
+      actions.notify(
+        'win',
+        a.kind === 'FreeBet'
+          ? `🎁 ${a.promotion}: you got a ${formatMoney(a.amount, currency)} free bet!`
+          : `🎉 ${a.promotion}: +${formatMoney(a.amount, currency)}`,
+      );
+      if (a.balance != null) actions.setBalance(a.balance);
+    },
+  });
   // The side legend only opens by default when there's room for it beside
   // the arena; on phones it's a bottom sheet that would cover everything.
   const [legendOpen, setLegendOpen] = useState(() => window.innerWidth > 1100);
@@ -63,6 +79,7 @@ export default function App() {
         <HistoryStrip state={state} />
 
         <div className="top-right">
+          <PromoButton promos={promos} open={promoOpen} onToggle={() => setPromoOpen((o) => !o)} />
           <SizeIndicator state={state} live={live} />
           <div className="conn-badge" title={`connection: ${state.conn}`}>
             <span className={`conn conn-${state.conn}`} />
@@ -84,7 +101,10 @@ export default function App() {
       </div>
 
       <LiveBets state={state} />
-      <Hud state={state} live={live} actions={actions} />
+      {promoOpen && promos && <PromoPanel promos={promos} currency={currency} onClose={() => setPromoOpen(false)} />}
+      <PromoBanner event={announcement} onDone={dismissAnnouncement} />
+
+      <Hud state={state} live={live} actions={actions} freeBets={promos?.freeBets} />
       <Toasts toasts={state.toasts} actions={actions} />
       <SplashScreen state={state} />
     </div>

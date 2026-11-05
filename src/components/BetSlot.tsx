@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { currencySymbol, formatMoney, formatMultiplier } from '../game/money';
 import type { GameActions, GameState } from '../game/useGameState';
 import type { LiveClock } from '../game/useLiveClock';
+import type { FreeBet } from '../promo/promoApi';
 
 const AUTOPLAY_OPTIONS: Array<{ label: string; value: number | null }> = [
   { label: '10', value: 10 },
@@ -23,11 +24,14 @@ export function BetSlot({
   state,
   live,
   actions,
+  freeBet,
 }: {
   slot: number;
   state: GameState;
   live: LiveClock;
   actions: GameActions;
+  /** The player's next promo free bet, if they have one. */
+  freeBet?: FreeBet | null;
 }) {
   const [amount, setAmount] = useState(5);
   const [draft, setDraft] = useState<string | null>(null);
@@ -105,8 +109,8 @@ export function BetSlot({
       return (
         <button className="main-btn cashout" disabled={!online} onClick={() => actions.cashOut(slot)}>
           <span className="main-btn-title">CASH OUT</span>
-          <span className="main-btn-amount">{formatMoney(myBet!.amount * effective, currency)}</span>
-          <span className="main-btn-meta">{formatMultiplier(effective)}{boost > 0 ? ' ⚡' : ''}</span>
+          <span className="main-btn-amount">{formatMoney(myBet!.amount * effective - (myBet!.free ? myBet!.amount : 0), currency)}</span>
+          <span className="main-btn-meta">{formatMultiplier(effective)}{boost > 0 ? ' ⚡' : ''}{myBet!.free ? ' · FREE BET' : ''}</span>
         </button>
       );
     }
@@ -250,6 +254,18 @@ export function BetSlot({
 
       <div className="bet-slot-action">
         {renderMainButton()}
+        {freeBet && state.phase === 'waiting' && myBet == null && !autoPlayOn && !queued && (
+          <button
+            className="free-bet-btn"
+            disabled={!online}
+            onClick={() => {
+              lastPlacedRound.current = state.roundId;
+              actions.placeFreeBet(slot, autoCashOut);
+            }}
+          >
+            🎁 FREE BET {formatMoney(freeBet.amount, currency)}
+          </button>
+        )}
         {result && <span className={`bet-slot-result ${result.kind}`}>{result.text}</span>}
       </div>
     </div>
