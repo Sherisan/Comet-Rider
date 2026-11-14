@@ -19,9 +19,12 @@ export interface SpawnEvent {
   phase: number;
 }
 
-/** Boost per eaten fish by tier — mirror of SpawnSchedule.TierBoosts. */
-export const TIER_BOOSTS = [0.02, 0.05, 0.12, 0.25];
-export const MAX_BOOST = 2.0;
+/** Payout boost per eaten swimmer by tier, as a fraction (0.001 = +0.1%) — mirror of SpawnSchedule.TierBoosts. The payout is multiplier × (1 + boost). */
+export const TIER_BOOSTS = [0.001, 0.002, 0.003, 0.005];
+export const MAX_BOOST = 0.005;
+
+/** A payout boost as shown to the player, e.g. 0.002 → "+0.2%". */
+export const formatBoost = (boost: number) => `+${(boost * 100).toFixed(1)}%`;
 
 function sfc32(a: number, b: number, c: number, d: number): () => number {
   return () => {

@@ -60,7 +60,7 @@ export function Hud({
             <div className="quick-cashouts">
               {liveBets.map((i) => {
                 const bet = state.myBets[i]!;
-                const effective = live.multiplier + (bet.boost ?? 0);
+                const effective = live.multiplier * (1 + (bet.boost ?? 0));
                 return (
                   <button
                     key={i}

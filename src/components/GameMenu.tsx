@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FUEL_CELLS, SHIP_TIERS, formatTierMultiplier } from '../game/tiers';
-import { TIER_BOOSTS } from '../game/spawnSchedule';
+import { formatBoost, TIER_BOOSTS } from '../game/spawnSchedule';
 import { formatMoney, formatMultiplier } from '../game/money';
 import type { GameActions, GameState } from '../game/useGameState';
 import { Ship } from './space/Ship';
@@ -22,8 +22,8 @@ function HowToPlayView() {
       <ol className="menu-howto-list">
         <li>Choose a bet amount for either or both betting slots, then tap <strong>LAUNCH</strong> during the countdown.</li>
         <li>The multiplier climbs as your ship accelerates. Tap <strong>Cash Out</strong> before it's destroyed to win your bet × the multiplier.</li>
-        <li>Want more? Move the mouse (or drag a finger) to fly the ship. Grab glowing fuel cells for a multiplier boost — your class can only carry cells smaller than itself, so bigger cells unlock as you upgrade.</li>
-        <li>Dodge the asteroids — flying into one destroys the ship and every active bet instantly. If you don't steer, you can't hit one.</li>
+        <li>Want more? Move the mouse (or drag a finger) to fly the ship. Grab glowing fuel cells for a small payout boost (+0.1% to +0.5% per cell, up to +0.5% per bet) — your class can only carry cells smaller than itself, so bigger cells unlock as you upgrade.</li>
+        <li>Dodge the asteroids — flying into one destroys the ship and cashes out every active bet at the multiplier it hit. If you don't steer, you can't hit one.</li>
         <li>Your ship upgrades from Scout to Mothership as the multiplier passes {SHIP_TIERS.slice(2, -1).map((t) => formatTierMultiplier(t.multiplier)).join(', ')} and {formatTierMultiplier(SHIP_TIERS[SHIP_TIERS.length - 1].multiplier)}.</li>
         <li>Set <strong>Auto</strong> → <strong>Cash out at</strong> to lock in automatically, or <strong>Auto-play</strong> to keep betting for several rounds.</li>
       </ol>
@@ -37,7 +37,7 @@ function GameRulesView({ state }: { state: GameState }) {
       <p>
         Each player has two independent betting slots — each can carry a different bet amount and
         Auto Cash-Out value. Both slots share the same ship: if it hits an asteroid, every active slot's
-        bet is lost together.
+        bet is cashed out together.
       </p>
       {state.limits && (
         <>
@@ -215,7 +215,7 @@ export function GameMenu({ state, actions }: { state: GameState; actions: GameAc
               <span className="legend-tier">needs {SHIP_TIERS[i + 1].name}+</span>
             </div>
             <span className="legend-mult" style={{ color: cell.color }}>
-              +{TIER_BOOSTS[i].toFixed(2)}x
+              {formatBoost(TIER_BOOSTS[i])}
             </span>
           </div>
         ))}

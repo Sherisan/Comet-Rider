@@ -2,11 +2,12 @@ import { useRef, type CSSProperties } from 'react';
 import { tierForMultiplier } from '../game/tiers';
 import type { GameState } from '../game/useGameState';
 import type { LiveClock } from '../game/useLiveClock';
+import { formatBoost } from '../game/spawnSchedule';
 
 /**
  * Hero status readout above the fish — the big number every crash game is
  * built around. Waiting: countdown with a draining bar. Flying: the live
- * multiplier, tinted by the fish's current tier, plus any eat boost.
+ * multiplier, tinted by the fish's current tier, plus any eat boost (a % added to the payout).
  * Crashed: the bust multiplier in red.
  */
 export function MultiplierPill({
@@ -48,7 +49,7 @@ export function MultiplierPill({
   return (
     <div className="hero flying" style={{ '--hero-color': tier.multColor } as CSSProperties}>
       <span className="hero-value">{live.multiplier.toFixed(2)}x</span>
-      {boost > 0 && <span className="hero-boost">⚡ +{boost.toFixed(2)}x boost</span>}
+      {boost > 0 && <span className="hero-boost">⚡ {formatBoost(boost)} boost</span>}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { currencySymbol, formatMoney, formatMultiplier } from '../game/money';
+import { formatBoost } from '../game/spawnSchedule';
 import type { GameActions, GameState } from '../game/useGameState';
 import type { LiveClock } from '../game/useLiveClock';
 import type { FreeBet } from '../promo/promoApi';
@@ -105,7 +106,7 @@ export function BetSlot({
 
   const renderMainButton = () => {
     if (betRiding && state.phase === 'flying') {
-      const effective = live.multiplier + boost;
+      const effective = live.multiplier * (1 + boost);
       return (
         <button className="main-btn cashout" disabled={!online} onClick={() => actions.cashOut(slot)}>
           <span className="main-btn-title">CASH OUT</span>
@@ -156,7 +157,7 @@ export function BetSlot({
   };
 
   const result = myBet?.dead
-    ? { kind: 'lost', text: '☄️ ASTEROID HIT' }
+    ? { kind: 'won', text: `☄️ ASTEROID HIT · +${formatMoney(myBet.winAmount ?? 0, currency)}` }
     : myBet?.cashedOutAt != null && (myBet.winAmount ?? 0) > 0
       ? { kind: 'won', text: `+${formatMoney(myBet.winAmount!, currency)} @ ${formatMultiplier(myBet.cashedOutAt)}` }
       : myBet?.lost
@@ -174,7 +175,7 @@ export function BetSlot({
               Auto{autoPlayOn || autoCashOn ? ' •' : ''}
             </button>
           </div>
-          {boost > 0 && <span className="bet-slot-boost">⚡ +{boost.toFixed(2)}x</span>}
+          {boost > 0 && <span className="bet-slot-boost">⚡ {formatBoost(boost)}</span>}
         </div>
 
         <div className="bet-slot-row">

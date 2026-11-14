@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties, PointerEvent as ReactPointerEvent, RefObject } from 'react';
 import { SHIP_TIERS, playerScale, tierForMultiplier, type ShipTier } from '../game/tiers';
 import { msToMultiplier } from '../game/multiplier';
-import { swimmerPosition, TIER_BOOSTS, type SpawnEvent } from '../game/spawnSchedule';
+import { formatBoost, swimmerPosition, TIER_BOOSTS, type SpawnEvent } from '../game/spawnSchedule';
 import type { GameActions, GameState } from '../game/useGameState';
 import type { LiveClock } from '../game/useLiveClock';
 import { Ship } from './space/Ship';
@@ -261,7 +261,7 @@ export function GameArena({
               collectedRef.current.add(ev.id);
               setFloaties((f) => [
                 ...f.slice(-5),
-                { key: ++floatieKey, x: pos.x, y: pos.y, text: `+${TIER_BOOSTS[ev.tier].toFixed(2)}x` },
+                { key: ++floatieKey, x: pos.x, y: pos.y, text: formatBoost(TIER_BOOSTS[ev.tier]) },
               ]);
               SLOTS.forEach((s) => L.actions.eatFish(s, ev.id));
             }
